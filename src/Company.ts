@@ -1,5 +1,5 @@
 import faker from 'faker';
-
+import { Mappable } from './CustomMap';
 export class Company {
     companyName: string;
     catchPhrase: string;
@@ -7,6 +7,7 @@ export class Company {
         lat: number;
         lng: number;
     }
+    color: string = 'red';
 
     constructor() {
         this.companyName = faker.company.companyName();
